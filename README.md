@@ -4,23 +4,23 @@
 **IN-ORDER CPU MODELS**
 
 
-##SimpleCPU
+## SimpleCPU
 
 SimpleCPU consists of : BaseSimpleCPU , AtomicSimpleCPU , TimingSimpleCPU
 
-###BaseSimpleCPU
+### BaseSimpleCPU
 
 
-###AtomicSimpleCPU
-
-
-
-###TimingSimpleCPU
+### AtomicSimpleCPU
 
 
 
+### TimingSimpleCPU
 
 
 
 
-##Minor CPU Model
+
+
+
+## Minor CPU Model
