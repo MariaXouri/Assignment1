@@ -32,39 +32,44 @@ sim_insts=5028 instructions per simulation
 
 host_inst_rate=137260 inst/sec
 
+
+
 ## Question 3: *Find the CPI value : miss_penaltyl1=6 cycles,  miss_penaltyl2=50 cycles, 1 cycle cache hit/instruction*
 
 - IL1miss_num = 332
 - DL1miss_num = 179
 - L2miss_num = 479
 - Total_Inst_num = 5028
-
-   **CPI = 6.373**
-
-
+- 
+**CPI = 6.373**
 
 
 
+## Question 4: *What are the in-order CPU models?*
 
 
 **IN-ORDER CPU MODELS**
 
-The in-order CPU models are:
 
-## -SimpleCPU
+The in-order CPU models are differensiated from the out-of-order CPUs in the form of execution.The in-order CPU  has a sequential order of executing programs.It also waits for every instruction to be executed until it continues to the next ones. Finally, it is slower in execution due to the time delays.   
 
-SimpleCPU consists of : BaseSimpleCPU , AtomicSimpleCPU , TimingSimpleCPU
+### SimpleCPU
 
-### BaseSimpleCPU
+The SimpleCPU is an in-order,not detailed CPU.It contains warm up periods (warm up period:The time that the simulation runs before it gathers the results).It also contains client systems that use a specific server.Furthermore, SimpleCPU can evaluate if a program runs correctly.It consists of :
+BaseSimpleCPU , AtomicSimpleCPU , TimingSimpleCPU
 
 
-### AtomicSimpleCPU
+#### BaseSimpleCPU
+ 
+Atomic and Timing SimpleCPU inherit BaseSimpleCPU which justifies the fact that it cannot run on its own.It is responsible for creating functions that are related to program interruptions,controlling the instruction fetch,implementing the execution context. (Instructions-Parameters-Result)
 
+
+#### AtomicSimpleCPU
+
+While connecting to cache, it functions "atomically", which means that it uses only one step to implement an instruction.It computes the overall time connection to cache by adding all the delays from the atomic accesses and contains functions for write and read.Additionally it keeps time,it is responsible for frequency of CPU,it defines the port to connect with memory and controls the connection between CPU and cache.  
 
 
 ### TimingSimpleCPU
-
-
 
 
 
