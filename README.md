@@ -70,9 +70,10 @@ While connecting to cache, it functions "atomically", which means that it uses o
 
 
 ### TimingSimpleCPU
-
-
-
+It connects to the memory through time.TimingSimpleCPU waits for the system to respond before it starts the procedure.It is inherited by Base and has the same functions. It also defines the port that is used to hook up to memory.
 
 
 ## -Minor CPU Model
+It is an in-order model with stable pipeline, configurable structures and behavior.It is used in strictly in-order models through the order MinorTrace/minorview.py format/tool.Minor CPU is implemented in a similar way to other gem5 models through Python. It can indirectly multithread using thread comments.
+
+*Pipelining is a technique where multiple instructions are overlapped during execution.*
