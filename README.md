@@ -45,7 +45,7 @@ host_inst_rate=137260 inst/sec
 
 
 
-## Question 4: *What are the in-order CPU models? *
+## Question 4: *What are the in-order CPU models?*
 
 
 **IN-ORDER CPU MODELS**
@@ -59,38 +59,20 @@ The SimpleCPU is an in-order,not detailed CPU.It contains warm up periods (warm 
 BaseSimpleCPU , AtomicSimpleCPU , TimingSimpleCPU
 
 
-*BaseSimpleCPU*
+#### BaseSimpleCPU
  
 Atomic and Timing SimpleCPU inherit BaseSimpleCPU which justifies the fact that it cannot run on its own.It is responsible for creating functions that are related to program interruptions,controlling the instruction fetch,implementing the execution context. (Instructions-Parameters-Result)
 
 
-*AtomicSimpleCPU*
+#### AtomicSimpleCPU
 
 While connecting to cache, it functions "atomically", which means that it uses only one step to implement an instruction.It computes the overall time connection to cache by adding all the delays from the atomic accesses and contains functions for write and read.Additionally it keeps time,it is responsible for frequency of CPU,it defines the port to connect with memory and controls the connection between CPU and cache.  
 
 
-*TimingSimpleCPU*
-
-TimingSimpleCPU waits for the system to respond before it starts the procedure and it uses Timing memory accesses. It is inherited from BaseSimpleCPU and contains the same functions.It defines the port that is used to hook up to memory,controls the connection between CPU and cache.
-
-
-### Minor CPU Model
-
-The Minor CPU is an in-order model with stable pipeline and configurable data structures and execute behaviour.It is strictly used in in-order processors amd allows visualization through the MinorTrace/minorview.py format/tool.It is implemented similarly to the other Gem5 models by using Python.It doesn't support multithreading but it can indirectly achieve it through thread comments.
-
-
-
-*Pipelining = A technique where multiple instructions are overlapped during execution.*
-
-
-## Question 4b I.Which CPU model between MinorCPU and TimingSimpleCPU has bigger sensitivity in frequency change and why? II.Which CPU model between MinorCPU and TimingSimpleCPU has bigger sensitivity in memory-type change and why?
-
-I.
+### TimingSimpleCPU
 
 
 
 
 
-
-
-
+## -Minor CPU Model
