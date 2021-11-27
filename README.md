@@ -27,7 +27,9 @@ An alternative way is to create a function changeFrequency() which asks the user
 ## Question 2: *What values do sim_seconds , sim_insts and host_inst_rate have in stats.txt?*
 
 sim_seconds=0.000024s
+
 sim_insts=5028 instructions per simulation
+
 host_inst_rate=137260 inst/sec
 
 ## Question 3: *Find the CPI value : miss_penaltyl1=6 cycles,  miss_penaltyl2=50 cycles, 1 cycle cache hit/instruction*
