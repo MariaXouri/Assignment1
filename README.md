@@ -59,7 +59,7 @@ host_inst_rate=137260 inst/sec
 - DL1miss_num = 179
 - L2miss_num = 479
 - Total_Inst_num = 5028
-- 
+
 **CPI = 6.373**
 
 
@@ -88,7 +88,7 @@ Atomic and Timing SimpleCPU inherit BaseSimpleCPU which justifies the fact that 
 While connecting to cache, it functions "atomically", which means that it uses only one step to implement an instruction.It computes the overall time connection to cache by adding all the delays from the atomic accesses and contains functions for write and read.Additionally it keeps time,it is responsible for frequency of CPU,it defines the port to connect with memory and controls the connection between CPU and cache.  
 
 
-### TimingSimpleCPU
+#### TimingSimpleCPU
 It connects to the memory through time.TimingSimpleCPU waits for the system to respond before it starts the procedure.It is inherited by Base and has the same functions. It also defines the port that is used to hook up to memory.
 
 
@@ -99,7 +99,55 @@ It is an in-order model with stable pipeline, configurable structures and behavi
 
 ## Question 4b: *Which CPU between TimingCPU and MinorCPU has bigger sensitivity in frequency and memory changes and why?*
 
-Frequency changes:
+Frequency changes:If we change the frequency to 0.5GHz we have those statistics:
 
-Memory changes:
+**INSTRUCTION RATE**
+
+MinorCPU - default : 214636
+
+MinorCPU 0.5 GHz :   174543
+
+Result : 40093
+
+
+TimingSimpleCPU - default : 515305
+
+TimingSimpleCPU 0.5 GHz : 317025
+
+Result : 198280
+
+
+*TimingSImpleCPU has a bigger change in instruction rate.*
+
+
+Memory changes : If we change the memory to HBM_1000_4H_1x64  we have those statistics : 
+
+MinorCPU - default : 214636
+
+MinorCPU  HBM_1000_4H_1x64 :  110158
+
+Result : 104478
+
+
+TimingSimpleCPU - default : 515305
+
+TimingSimpleCPU 0.5 GHz : 195290
+
+Result : 320015
+
+
+*TimingSImpleCPU has a bigger change in instruction rate.*
+
+
+**Explaination** : TimingSimpleCPU has no pipeline system.This means that it stalls on every memory request waiting for a response. If we change some parameters, the instruction rate will fall in a larger amount due to the time delays.This makes TimingSimpleCPU more sensitive to memory and frequency alterations.
+
+
+
+
+
+
+
+
+
+
 
