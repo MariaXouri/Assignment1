@@ -70,7 +70,7 @@ host_inst_rate=137260 inst/sec
 **IN-ORDER CPU MODELS**
 
 
-The in-order CPU models are differensiated from the out-of-order CPUs in the form of execution.The in-order CPU  has a sequential order of executing programs.It also waits for every instruction to be executed until it continues to the next ones. Finally, it is slower in execution due to the time delays.   
+The in-order CPU models are differensiated from the out-of-order CPUs in the form of execution.The in-order CPU  has a sequential order of executing programs.It also waits for every instruction to be executed until it continues to the next ones. Finally, it is slower in execution due to the time delays.They are also statically scheduled.  
 
 
 ### 1. SimpleCPU
