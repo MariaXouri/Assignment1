@@ -6,11 +6,17 @@
 **FILE NAMES**
 
 hello_result : stats for question 2
+
 m5-minor : gem5 MinorCPU results
+
 m5-timingsimp : gem5 TimingSimpleCPU results
-m5MinorFreq : gem5 MinorCPU results with 0.5GHz frequency e
+
+m5MinorFreq : gem5 MinorCPU results with 0.5GHz frequency 
+
 m5MinorMemor : gem5 MinorCPU results with HBM_1000_4H_1x64 ruby
+
 m5TimingSimpleMemor : TimingSimpleCPU with HBM_1000_4H_1x64 ruby
+
 m5TimingSimpFreq : TimingSimpleCPU results with 0.5GHz frequency 
 
 
