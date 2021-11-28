@@ -107,6 +107,7 @@ It can provide data and instruction interfaces for connection to a cache system.
 Fetch1 is responsible for fetching cache lines or partial cache lines from the I-cache and passing them on to Fetch2.
 
 2. Fetch2
+
 Fetch2 receives a line from Fetch1 into its input buffer, breaks it to instructions. It contains the branch prediction mechanism.
 
 3. Decode 
