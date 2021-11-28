@@ -140,6 +140,7 @@ MinorCPU - default : 214636
 MinorCPU 0.5 GHz :   174543
 
 Result : 18.7% change in instruction rate | 93% change in simulation time 
+-------------------------------------------------------------------------
 
 
 
@@ -165,6 +166,7 @@ MinorCPU - default : 214636
 MinorCPU  HBM_1000_4H_1x64 :  110158
 
 Result : 48.7% change in instruction rate | 4.6% change in simulation time 
+---------------------------------------------------------------------------
 
 
 
