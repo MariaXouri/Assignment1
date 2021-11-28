@@ -23,7 +23,7 @@ m5TimingSimpFreq : TimingSimpleCPU results with 0.5GHz frequency
 
 
 
-## Question 1 : *Which parameters has starter_se.py transfered to gem5? How can we change the CPU  frequency?*
+## Question 1 : *Which characteristics has starter_se.py transfered to gem5? How can we change the CPU  frequency?*
 
 
 The starter_se.py script gives valuable information about the Gem5 system paramters.It can be confirmed by the main() function's content.These parameters are:
@@ -60,7 +60,7 @@ host_inst_rate=137260 inst/sec
 - L2miss_num = 479
 - Total_Inst_num = 5028
 
-**CPI = 6.373**
+ **CPI = 6.373**
 
 
 
@@ -72,7 +72,8 @@ host_inst_rate=137260 inst/sec
 
 The in-order CPU models are differensiated from the out-of-order CPUs in the form of execution.The in-order CPU  has a sequential order of executing programs.It also waits for every instruction to be executed until it continues to the next ones. Finally, it is slower in execution due to the time delays.   
 
-### SimpleCPU
+
+### 1. SimpleCPU
 
 The SimpleCPU is an in-order,not detailed CPU.It contains warm up periods (warm up period:The time that the simulation runs before it gathers the results).It also contains client systems that use a specific server.Furthermore, SimpleCPU can evaluate if a program runs correctly.It consists of :
 BaseSimpleCPU , AtomicSimpleCPU , TimingSimpleCPU
@@ -92,14 +93,18 @@ While connecting to cache, it functions "atomically", which means that it uses o
 It connects to the memory through time.TimingSimpleCPU waits for the system to respond before it starts the procedure.It is inherited by Base and has the same functions. It also defines the port that is used to hook up to memory.
 
 
-### Minor CPU Model
+
+### 2. Minor CPU Model
 It is an in-order model with stable pipeline, configurable structures and behavior.It is used in strictly in-order models through the order MinorTrace/minorview.py format/tool.Minor CPU is implemented in a similar way to other gem5 models through Python. It can indirectly multithread using thread comments.
 
 *Pipelining is a technique where multiple instructions are overlapped during execution.*
 
+
 ## Question 4b: *Which CPU between TimingCPU and MinorCPU has bigger sensitivity in frequency and memory changes and why?*
 
-Frequency changes:If we change the frequency to 0.5GHz we have those statistics:
+- Frequency changes:If we change the frequency to 0.5GHz we have those statistics:
+
+
 
 **INSTRUCTION RATE**
 
@@ -108,6 +113,7 @@ MinorCPU - default : 214636
 MinorCPU 0.5 GHz :   174543
 
 Result : 40093
+
 
 
 TimingSimpleCPU - default : 515305
@@ -120,13 +126,19 @@ Result : 198280
 *TimingSImpleCPU has a bigger change in instruction rate.*
 
 
-Memory changes : If we change the memory to HBM_1000_4H_1x64  we have those statistics : 
+
+- Memory changes : If we change the memory to HBM_1000_4H_1x64  we have those statistics : 
+
+
+
+**INSTRUCTION RATE**
 
 MinorCPU - default : 214636
 
 MinorCPU  HBM_1000_4H_1x64 :  110158
 
 Result : 104478
+
 
 
 TimingSimpleCPU - default : 515305
@@ -136,7 +148,9 @@ TimingSimpleCPU 0.5 GHz : 195290
 Result : 320015
 
 
+
 *TimingSImpleCPU has a bigger change in instruction rate.*
+
 
 
 **Explaination** : TimingSimpleCPU has no pipeline system.This means that it stalls on every memory request waiting for a response. If we change some parameters, the instruction rate will fall in a larger amount due to the time delays.This makes TimingSimpleCPU more sensitive to memory and frequency alterations.
