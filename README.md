@@ -139,7 +139,8 @@ MinorCPU - default : 214636
 
 MinorCPU 0.5 GHz :   174543
 
-Result : 18.7% change in instruction rate | 93% change in simulation time 
+**Result :** 18.7% change in instruction rate | 93% change in simulation time 
+
 -------------------------------------------------------------------------
 
 
@@ -148,7 +149,9 @@ TimingSimpleCPU - default : 515305
 
 TimingSimpleCPU 0.5 GHz : 317025
 
-Result : 38.4% change in instruction rate | 115% change in simulation time 
+**Result :** 38.4% change in instruction rate | 115% change in simulation time 
+
+----------------------------------------------------------------------------
 
 
 *TimingSImpleCPU has a bigger change in instruction rate and simulation time.*
@@ -165,7 +168,8 @@ MinorCPU - default : 214636
 
 MinorCPU  HBM_1000_4H_1x64 :  110158
 
-Result : 48.7% change in instruction rate | 4.6% change in simulation time 
+**Result :** 48.7% change in instruction rate | 4.6% change in simulation time 
+
 ---------------------------------------------------------------------------
 
 
@@ -174,7 +178,7 @@ TimingSimpleCPU - default : 515305
 
 TimingSimpleCPU 0.5 GHz : 195290
 
-Result : 74% change in instruction rate | 3.9% change in simulation time 
+**Result :** 74% change in instruction rate | 3.9% change in simulation time 
 
 
 
