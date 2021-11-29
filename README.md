@@ -177,9 +177,11 @@ MinorCPU  HBM_1000_4H_1x64 :  110158 , 0.000045s
 
 TimingSimpleCPU - default : 515305 , 0.000051s 
 
-TimingSimpleCPU 0.5 GHz : 195290 , 0.000060s
+TimingSimpleCPU HBM_1000_4H_1x64 : 195290 , 0.000060s
 
 **Result :** 74% change in instruction rate | 3.9% change in simulation time 
+
+----------------------------------------------------------------------------
 
 
 
