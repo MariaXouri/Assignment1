@@ -136,9 +136,9 @@ Execute provides the instruction execution and memory access. An instructions pa
 
 **INSTRUCTION RATE - SIMULATION TIME**
 
-MinorCPU - default : 214636   
+MinorCPU - default : 214636 , 0.000043s
 
-MinorCPU 0.5 GHz :   174543
+MinorCPU 0.5 GHz :   174543 , 0.000073s 
 
 **Result :** 18.7% change in instruction rate | 93% change in simulation time 
 
@@ -146,9 +146,9 @@ MinorCPU 0.5 GHz :   174543
 
 
 
-TimingSimpleCPU - default : 515305
+TimingSimpleCPU - default : 515305 , 0.000051s 
 
-TimingSimpleCPU 0.5 GHz : 317025
+TimingSimpleCPU 0.5 GHz : 317025 , 0.000110 s 
 
 **Result :** 38.4% change in instruction rate | 115% change in simulation time 
 
@@ -165,9 +165,9 @@ TimingSimpleCPU 0.5 GHz : 317025
 
 **INSTRUCTION RATE - SIMULATION TIME**
 
-MinorCPU - default : 214636
+MinorCPU - default : 214636 ,  0.000043s
 
-MinorCPU  HBM_1000_4H_1x64 :  110158
+MinorCPU  HBM_1000_4H_1x64 :  110158 , 0.000045s
 
 **Result :** 48.7% change in instruction rate | 4.6% change in simulation time 
 
@@ -175,9 +175,9 @@ MinorCPU  HBM_1000_4H_1x64 :  110158
 
 
 
-TimingSimpleCPU - default : 515305
+TimingSimpleCPU - default : 515305 , 0.000051s 
 
-TimingSimpleCPU 0.5 GHz : 195290
+TimingSimpleCPU 0.5 GHz : 195290 , .000060 s
 
 **Result :** 74% change in instruction rate | 3.9% change in simulation time 
 
