@@ -26,7 +26,7 @@ m5TimingSimpFreq : TimingSimpleCPU results with 0.5GHz frequency
 ## Question 1 : *Which characteristics has starter_se.py transfered to gem5? How can we change the CPU  frequency?*
 
 
-The starter_se.py script gives valuable information about the Gem5 system paramters.It can be confirmed by the main() function's content.These parameters are:
+The starter_se.py script gives valuable information about the Gem5 system characteristics.It can be confirmed by the main() function's content.These characteristics are:
 
 1. --cpu , which refers to the CPU type. The type is set to be "Atomic".
 2. --cpu-freq , which refers to the CPU frequency (clock rate) . The frequency is set to be "4GHz".
