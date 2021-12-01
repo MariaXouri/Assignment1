@@ -190,6 +190,9 @@ TimingSimpleCPU HBM_1000_4H_1x64 : 195290 , 0.000060s
 
 *TimingSImpleCPU has a bigger change in instruction rate and a smaller change in simulation time.*
 
+![image](https://user-images.githubusercontent.com/94965416/144242077-d3ecc662-2ef1-4a9b-852a-1a689702c6e8.png)
+
+
 
 
 **Explaination** : TimingSimpleCPU has no pipeline system.This means that it stalls on every memory request waiting for a response. If we change some parameters, the instruction rate will fall in a larger amount due to the time delays.This makes TimingSimpleCPU more sensitive to memory and frequency alterations.With different memory technology, it seems that simulation seconds are more affected in the minor cpu. As the memory access changes, the instruction processes in the pipeline with different speed.
