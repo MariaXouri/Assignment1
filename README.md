@@ -36,8 +36,9 @@ The starter_se.py script gives valuable information about the Gem5 system charac
 6. --mem-ranks showing the memory ranks,set to be "None".
 7. --mem-size indicating the memory size,set to be "2GB".
 
+The CPU frequency can be changed by typing in the CLI the flag --cpu-clock = x GHz (x: the number of frequency we want the system to have).
 
-The CPU frequency can be changed by editing the script in main.Instead of "4GHz" the user can edit the script using whatever frequncy he/she wants.
+The CPU frequency can also be changed by editing the script in main.Instead of "4GHz" the user can edit the script using whatever frequncy he/she wants.
 
 An alternative way is to create a function changeFrequency() which asks the user to type in the CLI a preferable frequency.
 
@@ -55,10 +56,12 @@ host_inst_rate=137260 inst/sec
 
 ## Question 3: *Find the CPI value : miss_penaltyl1=6 cycles,  miss_penaltyl2=50 cycles, 1 cycle cache hit/instruction*
 
-- IL1miss_num = 332
-- DL1miss_num = 179
-- L2miss_num = 479
-- Total_Inst_num = 5028
+  **stats.txt**
+
+- IL1miss_num = 332                             system.cpu_cluster.cpus.icache.overall_misses::total  , number of overall misses icache l1     
+- DL1miss_num = 179                             system.cpu_cluster.cpus.dcache.overall_misses::total  , number of overall misses dcache l1
+- L2miss_num = 479                              system.cpu_cluster.l2.overall_misses::total , number of overall misses l2
+- Total_Inst_num = 5028                         sim_insts , number of instructions simulated 
 
  **CPI = 6.373**
 
