@@ -195,7 +195,7 @@ TimingSimpleCPU HBM_1000_4H_1x64 : 195290 , 0.000060s
 
 
 
-**Explaination** : TimingSimpleCPU has no pipeline system.This means that it stalls on every memory request waiting for a response. If we change some parameters, the instruction rate will fall in a larger amount due to the time delays.This makes TimingSimpleCPU more sensitive to memory and frequency alterations.With different memory technology, it seems that simulation seconds are more affected in the minor cpu. As the memory access changes, the instruction processes in the pipeline with different speed.
+**Explanation** : TimingSimpleCPU has no pipeline system.This means that it stalls on every memory request waiting for a response. If we change some parameters, the instruction rate will fall in a larger amount due to the time delays.This makes TimingSimpleCPU more sensitive to memory and frequency alterations.With different memory technology, it seems that simulation seconds are more affected in the minor cpu. As the memory access changes, the instruction processes in the pipeline with different speed.
 
 
 
