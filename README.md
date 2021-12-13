@@ -200,6 +200,9 @@ TimingSimpleCPU HBM_1000_4H_1x64 : 195290 , 0.000060s
 
 
 
+**COMMENTS FOR THE ASSIGNMENT**
+
+Generally, this assignment helped us understand better how the command line works and how to use the different instructions.The problem we faced was that gem5 couldn't be built easily so we had to search for different instructions online. This couldn't be done by the valuable help that lesson assistants gave us.They were responding very fast and were eager to solve every problem we had.
 
 
 
